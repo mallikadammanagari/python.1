@@ -1,4 +1,6 @@
+import csv
 from registration import registration_customer
+from registration import csv
 from login import login_customer
 from withdrawal import withdraw_money
 from deposit import deposit_money
@@ -8,6 +10,11 @@ Username=input('Enter your user name: ')
 password=input('Enter your password: ')
 Balance=int(input('ENter your Balance: '))
 customers.append([Name,Username,password,Balance])
+#append customer to csv 
+with open("empty.csv", "a",newline="") as f:
+    writer = csv.writer(f)
+    writer.writerow([Name, Username, password, Balance])
+
 print('registration sucessfull')
 uname=input('Username: ')
 pswd=input('Password: ')
@@ -16,11 +23,11 @@ if Username==uname and password==pswd:
     print('Login successfull')
     while True:
         print('''
-              ----Welcome to python Bank----
-              1.withdraw
-              2.Diposite
-              3.Balance Enqiry
-              4.Exit
+             ----Welcome to python Bank----
+            1.withdraw
+            2.Diposite
+             3.Balance Enqiry
+            4.Exit
 ''')
         choice=int(input('Enter your choice: '))
         match choice:

@@ -16,5 +16,3 @@ def deposit_money(customer):
 
     finally:
         print("Transaction completed.")
-customers = ["minnu", "meowmeow", "1234", 30000]
-deposit_money(customers)

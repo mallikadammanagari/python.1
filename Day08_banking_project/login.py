@@ -6,6 +6,7 @@ def login_customer(customers):
 
     except Exception:
         print("Login error!")
+        return None
 
     else:
         for customer in customers:
@@ -20,8 +21,3 @@ def login_customer(customers):
         print("Login process completed.\n")
 
 
-customers = [
-    ["Mallika", "mallika123", "1234", 5000]
-]
-
-login_customer(customers)

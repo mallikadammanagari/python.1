@@ -18,6 +18,3 @@ def withdraw_money(customer):
     finally:
         print("Transaction completed")
 
-customers = ["minnu", "meowmeow", "1234", 30000]
-
-withdraw_money(customers)
