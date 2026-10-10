@@ -46,7 +46,7 @@ while i<=6:
     print( )
     i+=1'''
 10
-username='mallika'
+'''username='mallika'
 password='1234'
 i=1
 while i<3:
@@ -60,7 +60,7 @@ while i<3:
         i += 1
 
 if i > 3:
-    print("Account Locked")
+    print("Account Locked")'''
 
 
 

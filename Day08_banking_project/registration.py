@@ -1,4 +1,3 @@
-import csv
 def registration_customer(customers):
     Name = input('Enter your Name: ')
     Username = input('Enter your user name: ')
@@ -10,10 +9,6 @@ def registration_customer(customers):
         if Balance < 0:
             print("Invalid balance! Your account can't go below zero")
         else:
-            customers.append([Name, Username, password, Balance])
-            with open ('empty.csv','a',newline="")as f:
-                writer = csv.writer(f)
-                writer.writerow([Name, Username, password, Balance])
             print("Registration sucessfull")
             print(customers)
 
@@ -22,5 +17,6 @@ def registration_customer(customers):
 
     finally:
         print("Registration process completed.")
+
 
 

@@ -1,5 +1,5 @@
 #game
-'''from random import randint,choices
+'''from random import randint
 random=randint(1,20)
 score=20
 while score>=0:
@@ -15,9 +15,10 @@ while score>=0:
 else:
     print('you lost the game')'''
 # rooled in dices game
-'''import random
+import random
 dice = random.randint(1, 6)
-print("You rolled:", dice)'''
+print("You rolled:", dice)
+
 
 
 
